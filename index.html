@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<script>
+	
+	const parentArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+	const oddNumder = function(array){
+		return array.filter(function(number){
+			if (number % 2){
+				return number;
+			}
+		});
+	}
+		console.log(oddNumder(parentArray));
+
+
+	const EvenNumber = function(array){
+		return array.filter(function(number)
+		{
+			if(!(number % 2)){
+				return number;
+			}
+		});
+	}
+		console.log(EvenNumber(parentArray));
+
+
+	const bigArray = [7,5,2,[1,3,4,[6,8,9]],[11,10,12],[15,13,14]];
+  
+	console.log(bigArray.toString().split(',').map(Number).sort(function(a,b){
+		return a-b 
+	}
+	));
+</script>
+</body>
+</html>
